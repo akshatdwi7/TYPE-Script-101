@@ -1,8 +1,9 @@
 type User ={
-    _id : string,
+    readonly _id : string,
     name: string,
     email: string,
     isActive: boolean
+    creditCard?: number
 }
 
 let myUser : User ={
@@ -11,6 +12,7 @@ let myUser : User ={
     email:"@joker.com",
     isActive: true
 }
+myUser.name =" cr7"
 console.log(myUser)
 
     
